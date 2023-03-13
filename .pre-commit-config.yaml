@@ -1,0 +1,42 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+
+  - repo: https://github.com/myint/autoflake
+    rev: "v2.0.0"
+    hooks:
+      - id: autoflake
+        args: [--remove-all-unused-imports, --remove-unused-variables, -i]
+
+  - repo: https://github.com/psf/black
+    rev: "22.10.0"
+    hooks:
+      - id: black
+
+  - repo: https://github.com/PyCQA/isort
+    rev: "5.10.1"
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/hadolint/hadolint
+    rev: "v2.12.1-beta"
+    hooks:
+      - id: hadolint-docker
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v3.0.0-alpha.4"
+    hooks:
+      - id: prettier
+
+  - repo: https://github.com/jazzband/pip-tools
+    rev: "6.11.0"
+    hooks:
+      - id: pip-compile
+        args: ["--no-emit-index-url", "--upgrade"]

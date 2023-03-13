@@ -1,0 +1,13 @@
+# editors
+.vscode/
+.*.swp
+.~lock.*#
+
+# python
+.mypy_cache/
+__pycache__/
+*.pyc
+venv/
+
+# misc
+.DS_Store

@@ -1,10 +1,10 @@
 # %%
-f  = "./input.txt"
+f = "./input.txt"
 with open(f) as file:
     sum = 0
     elves = []
     for row in file:
-        if row == '\n':
+        if row == "\n":
             elves.append(sum)
             sum = 0
         else:
