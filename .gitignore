@@ -11,3 +11,4 @@ venv/
 
 # misc
 .DS_Store
+test.txt
