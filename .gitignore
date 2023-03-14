@@ -5,6 +5,7 @@
 
 # python
 .mypy_cache/
+.ipynb_checkpoints
 __pycache__/
 *.pyc
 venv/
